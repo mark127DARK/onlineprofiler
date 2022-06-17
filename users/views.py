@@ -13,3 +13,6 @@ def home_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
     return render(request, 'users/index.html')
+
+def signup(request):
+    return render(request, 'users/signup.html')
